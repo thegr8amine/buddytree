@@ -1,0 +1,18 @@
+ button{
+    margin-top: 0px;
+    background-color: #3CB371; /* Green */
+    border: none;
+    color: #ffffff;  
+    padding: 1rem 2.9rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: all 150ms ease-in-out;
+    font-family: 'Dosis', sans-serif;
+    
+}
+button:hover{
+    transform: scale(1.1);
+}

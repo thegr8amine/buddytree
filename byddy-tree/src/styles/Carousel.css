@@ -1,0 +1,116 @@
+
+.card-container{
+    position: relative;
+    background-color: #036994;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 5rem ;
+    padding-bottom: 2rem;
+    border-radius: 10px;
+    height: 220px;
+    position: relative;
+    margin: 1rem 2rem;
+}
+.card-container img{
+    max-width: 6rem;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -3rem;
+    
+}
+.blocs{
+    display: flex; 
+}
+.blocs h3{
+    font-size: 8px;
+    border: solid;
+    margin: 5px 10px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.4);
+}
+.card-container h1{
+    font-size: 15px;
+    padding-bottom: 40px;
+
+}
+.card-container h3{
+    font-size: 8px;
+
+}
+.cards-container{
+    display: flex;
+}
+.slide {
+    opacity: 0;
+    transform: scale(0.8);
+    transition-duration: 1s ease;
+  }
+  
+  .slide.active {
+    height: 400px;
+    width: 100%;
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1);
+  }
+  .right-arrow {
+    font-size: 3rem;
+    color: #9C9C9C;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    transition: all 150ms ease-in-out;
+  }
+  
+  .left-arrow {
+    font-size: 3rem;
+    color: #9C9C9C;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    transition: all 150ms ease-in-out;
+  }
+  .right-arrow:hover{
+    color: #3CB371;
+    transform: scale(1.2);
+  }
+  .left-arrow:hover{
+    color: #3CB371;
+    transform: scale(1.2);
+  }
+ 
+  .carousel-slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media only screen and (max-width: 720px) {
+   
+    .card-container{
+        height: auto;
+        padding: 1rem;
+        
+    }
+    .card-container h1{
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+    .card-container h3{
+        font-size: 12px;
+    }
+    .blocs{ 
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    .arrows{
+        margin: 20px;
+    }
+}
